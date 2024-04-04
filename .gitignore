@@ -1,0 +1,4 @@
+work
+r[0-9]*
+.nextflow*
+*.gz

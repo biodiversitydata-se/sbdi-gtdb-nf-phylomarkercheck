@@ -1,0 +1,12 @@
+markername: 'bac-ssu-r214'
+input: 'input/bac-ssu-r214.fna'
+hmm: 'https://raw.githubusercontent.com/tseemann/barrnap/master/db/bac.hmm'
+hmmkey: '16S_rRNA'
+gtdb_metadata: 'https://data.gtdb.ecogenomic.org/releases/release214/214.1/bac120_metadata_r214.tsv.gz'
+n_per_species: '1,5,20'
+outdir: 'r214'
+max_cpus: 12
+max_memory: 124.GB
+non_gap_prop: 0.8
+phylogeny: 'https://data.gtdb.ecogenomic.org/releases/release214/214.1/bac120_r214.tree'
+model: 'GTR+F+I+G4'
