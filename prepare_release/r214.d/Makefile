@@ -5,25 +5,25 @@ clean:
 	rm -f *.alnfna
 	rm -f *.treefile
 
-sbdi-gtdb-sativa.r08rs214.1genome.addSpecies.fna.gz: $(wildcard ../r214/correct/*n1.addSpecies.fna.gz)
+sbdi-gtdb-sativa.r08rs214.1genome.addSpecies.fna.gz: $(wildcard ../../r214/correct/*n1.addSpecies.fna.gz)
 	gunzip -c $^ | gzip -c > $@
 
-sbdi-gtdb-sativa.r08rs214.1genome.assignTaxonomy.fna.gz: $(wildcard ../r214/correct/*n1.assignTaxonomy.fna.gz)
+sbdi-gtdb-sativa.r08rs214.1genome.assignTaxonomy.fna.gz: $(wildcard ../../r214/correct/*n1.assignTaxonomy.fna.gz)
 	gunzip -c $^ | gzip -c > $@
 
-sbdi-gtdb-sativa.r08rs214.5genomes.addSpecies.fna.gz: $(wildcard ../r214/correct/*n5.addSpecies.fna.gz)
+sbdi-gtdb-sativa.r08rs214.5genomes.addSpecies.fna.gz: $(wildcard ../../r214/correct/*n5.addSpecies.fna.gz)
 	gunzip -c $^ | gzip -c > $@
 
-sbdi-gtdb-sativa.r08rs214.5genomes.assignTaxonomy.fna.gz: $(wildcard ../r214/correct/*n5.assignTaxonomy.fna.gz)
+sbdi-gtdb-sativa.r08rs214.5genomes.assignTaxonomy.fna.gz: $(wildcard ../../r214/correct/*n5.assignTaxonomy.fna.gz)
 	gunzip -c $^ | gzip -c > $@
 
-sbdi-gtdb-sativa.r08rs214.20genomes.addSpecies.fna.gz: $(wildcard ../r214/correct/*n20.addSpecies.fna.gz)
+sbdi-gtdb-sativa.r08rs214.20genomes.addSpecies.fna.gz: $(wildcard ../../r214/correct/*n20.addSpecies.fna.gz)
 	gunzip -c $^ | gzip -c > $@
 
-sbdi-gtdb-sativa.r08rs214.20genomes.assignTaxonomy.fna.gz: $(wildcard ../r214/correct/*n20.assignTaxonomy.fna.gz)
+sbdi-gtdb-sativa.r08rs214.20genomes.assignTaxonomy.fna.gz: $(wildcard ../../r214/correct/*n20.assignTaxonomy.fna.gz)
 	gunzip -c $^ | gzip -c > $@
 
-sbdi-gtdb-sativa.r08rs214.20genomes.fna.gz: $(wildcard ../r214/correct/*n20.correct.fna.gz)
+sbdi-gtdb-sativa.r08rs214.20genomes.fna.gz: $(wildcard ../../r214/correct/*n20.correct.fna.gz)
 	gunzip -c $^ | gzip -c > $@
 
 sbdi-gtdb-sativa.r08rs214.ar53.sprepr.alnfna: ../r214/iqtree/arc-ssu-r214-sprep.alnfna
