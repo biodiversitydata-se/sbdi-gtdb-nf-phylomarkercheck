@@ -50,17 +50,18 @@ They will be made available in nf-core/ampliseq for phylogenetic placement.
 
 ## Version history
 
-* v9 (2025-02-18): Remove extra sequences from e.g. "n1" files that appeared due to ties.
+* v8 (2025-02-18): Remove extra sequences from e.g. "n1" files that appeared due to ties.
+    Renumber versions here so they correspond to the Figshare versions.
 
-* v8 (2024-06-25): Update to GTDB R09-RS220 from R08-RS214.
+* v7 (2024-06-25): Update to GTDB R09-RS220 from R08-RS214.
 
-* v7 (2024-04-24): Replace manual procedure with Nextflow pipeline. Update to GTDB R08-RS214 from R07-RS207.
+* v6 (2024-04-24): Replace manual procedure with Nextflow pipeline. Update to GTDB R08-RS214 from R07-RS207.
 
-* v6 (2022-10-07): Add missing fasta file with original GTDB names.
+* v5 (2022-10-07): Add missing fasta file with original GTDB names.
 
-* v5 (2022-09-02): Update README (this document)
+* v4 (2022-09-02): Update README (this document)
 
-* v4 (2022-08-31): Update to GTDB R07-RS207 from R06-RS202
+* v3 (2022-08-31): Update to GTDB R07-RS207 from R06-RS202
 
 ## Citations
 
