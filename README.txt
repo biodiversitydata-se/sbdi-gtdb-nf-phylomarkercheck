@@ -50,6 +50,8 @@ They will be made available in nf-core/ampliseq for phylogenetic placement.
 
 ## Version history
 
+* v9 (2025-04-28): Update to GTDB R10-RS226
+
 * v8 (2025-02-18): Remove extra sequences from e.g. "n1" files that appeared due to ties.
     Renumber versions here so they correspond to the Figshare versions.
 
