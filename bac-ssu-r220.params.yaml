@@ -6,7 +6,7 @@ gtdb_metadata: 'https://data.gtdb.ecogenomic.org/releases/release220/220.0/bac12
 n_per_species: '1,5,20'
 outdir: 'r220'
 max_cpus: 12
-max_memory: 124.GB
+max_memory: 256.GB
 non_gap_prop: 0.8
 phylogeny: 'https://data.gtdb.ecogenomic.org/releases/release220/220.0/bac120_r220.tree'
 model: 'GTR+F+I+G4'
