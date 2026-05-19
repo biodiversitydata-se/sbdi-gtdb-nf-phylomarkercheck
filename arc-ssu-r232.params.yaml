@@ -1,0 +1,11 @@
+markername: 'arc-ssu-r232'
+input: 'input/arc-ssu-r232.fna'
+hmm: 'arc.hmm'
+hmmkey: '16S_rRNA'
+gtdb_metadata: 'https://data.gtdb.ecogenomic.org/releases/release232/232.0/ar53_metadata_r232.tsv.gz'
+n_per_species: '1,5,20'
+outdir: 'r232-1'
+max_cpus: 12
+non_gap_prop: 0.8
+phylogeny: 'https://data.gtdb.ecogenomic.org/releases/release232/232.0/ar53_r232.tree'
+model: 'GTR+F+I+G4'
