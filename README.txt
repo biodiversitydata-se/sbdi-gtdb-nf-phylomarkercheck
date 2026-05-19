@@ -55,6 +55,8 @@ They will be made available in nf-core/ampliseq for phylogenetic placement.
 
 ## Version history
 
+* v12 (2026-05-19): Update to GTDB R11-RS232
+
 * v11 (2025-10-31): Stricter filtering of sequences before Sativa, see description above.
 
 * v10 (2025-04-30): Update versions in this text.
