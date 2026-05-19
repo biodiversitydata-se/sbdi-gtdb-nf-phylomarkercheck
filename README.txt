@@ -50,13 +50,20 @@ They will be made available in nf-core/ampliseq for phylogenetic placement.
 
 ## Version history
 
-* v7 (2024-04-24): Replace manual procedure with Nextflow pipeline. Update to GTDB R08-RS214 from R07-RS207.
+* v9 (2025-04-28): Update to GTDB R10-RS226
 
-* v6 (2022-10-07): Add missing fasta file with original GTDB names.
+* v8 (2025-02-18): Remove extra sequences from e.g. "n1" files that appeared due to ties.
+    Renumber versions here so they correspond to the Figshare versions.
 
-* v5 (2022-09-02): Update README (this document)
+* v7 (2024-06-25): Update to GTDB R09-RS220 from R08-RS214.
 
-* v4 (2022-08-31): Update to GTDB R07-RS207 from R06-RS202
+* v6 (2024-04-24): Replace manual procedure with Nextflow pipeline. Update to GTDB R08-RS214 from R07-RS207.
+
+* v5 (2022-10-07): Add missing fasta file with original GTDB names.
+
+* v4 (2022-09-02): Update README (this document)
+
+* v3 (2022-08-31): Update to GTDB R07-RS207 from R06-RS202
 
 ## Citations
 
@@ -77,3 +84,8 @@ Shen, Wei, Shuai Le, Yan Li, and Fuquan Hu. 2016. “SeqKit: A Cross-Platform an
 Rice, P., I. Longden, and A. Bleasby. 2000. “EMBOSS: The European Molecular Biology Open Software Suite.” Trends in Genetics: TIG 16 (6): 276–77. https://doi.org/10.1016/s0168-9525(00)02024-2.
 
 Straub, Daniel, Nia Blackwell, Adrian Langarica-Fuentes, Alexander Peltzer, Sven Nahnsen, and Sara Kleindienst. 2020. “Interpretations of Environmental Microbial Community Studies Are Biased by the Selected 16S RRNA (Gene) Amplicon Sequencing Pipeline.” Frontiers in Microbiology 11. https://doi.org/10.3389/fmicb.2020.550420.
+
+## Acknowledgements
+
+The computations were enabled by resources in project [NAISS 2023/22-601, SNIC 2022/22-500 and SNIC 2021/22-263] provided by the National Academic Infrastructure for Supercomputing in Sweden (NAISS) at UPPMAX, funded by the Swedish Research Council through grant agreement no. 2022-06725.
+Computations were also enabled by resources provided by Dr. Maria Vila-Costa, Institute of Environmental Assessment and Water Research (IDAEA-CSIC), Barcelona.

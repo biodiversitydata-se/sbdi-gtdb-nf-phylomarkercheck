@@ -1,0 +1,12 @@
+project: 'naiss2023-22-601'
+markername: 'arc-ssu-r226'
+input: 'input/arc-ssu-r226.fna'
+hmm: 'https://raw.githubusercontent.com/tseemann/barrnap/master/db/arc.hmm'
+hmmkey: '16S_rRNA'
+gtdb_metadata: 'https://data.gtdb.ecogenomic.org/releases/release226/226.0/ar53_metadata_r226.tsv.gz'
+n_per_species: '1,5,20'
+outdir: 'r226-2'
+max_cpus: 12
+non_gap_prop: 0.8
+phylogeny: 'https://data.gtdb.ecogenomic.org/releases/release226/226.0/ar53_r226.tree'
+model: 'GTR+F+I+G4'
