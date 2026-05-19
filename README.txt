@@ -12,21 +12,26 @@ Item type: Dataset
 Keywords: 16S rRNA, GTDB, DADA2, SBDI, Ampliseq
 Funding: Curation of this data was funded by the Swedish Research Council (VR), grant number 2019-00242.
 
-This readme file was last updated: 2024-04-24
+This readme file was last updated: 2025-10-31
 
 Please cite as: Swedish Biodiversity Infrastructure (SBDI; 2021). SBDI Sativa curated 16S GTDB database. https://doi.org/10.17044/scilifelab.14869077
 
 ## Dataset description
 
 The data in this [repository](https://doi.org/10.17044/scilifelab.14869077) is the result of vetting 16S sequences from the GTDB database release R08RS214 (r214) (https://gtdb.ecogenomic.org/; Parks et al. 2018) with the Sativa program (Kozlov et al. 2016)
-using the [sbdi-phylomarkercheck](https://github.com/biodiversitydata-se/sbdi-phylomarkercheck) Nextflow pipeline.
+using the [sbdi-phylomarkercheck](https://github.com/biodiversitydata-se/sbdi-phylomarkercheck) Nextflow pipeline version 1.0.2.
 
 Using Sativa [Kozlov et al. 2016], 16S sequences from GTDB were checked so that their phylogenetic signal is consistent with their taxonomy.
 
 Before calling Sativa, sequences longer than 2000 nucleotides or containing Ns were removed, and the reverse complement of each is calculated.
 Subsequently, sequences were aligned with HMMER [Eddy 2011] using the Barrnap [https://github.com/tseemann/barrnap] archaeal and bacterial 16S profiles respectively, 
 and sequences containing more than 10% gaps were removed.
-The remaining sequences were analyzed with Sativa, and sequences that were not phylogenetically consistent with their taxonomy were removed.
+From each genome the longest sequence was selected (three from species-representative genomes).
+Subsequently, 30 sequences were selected from each species with a stronger weight for species-representative genomes and sequences with longer alignment to the Barrnap profile.
+Priority was also multiplied by degree of CheckM contamination so that sequences from more contaminated genomes had a lower chance of becoming part of the 30 selected.
+Furthermore, sequences which did not have the same GTDB order as Silva order in GTDB's metadata, receieved a lower priority in selection of the 30.
+
+The 30 selected sequences were analyzed with Sativa, and sequences that were not phylogenetically consistent with their taxonomy were removed.
 
 Files for the DADA2 (Callahan et al. 2016) methods `assignTaxonomy` and `addSpecies` are available, in three different versions each. 
 The `assignTaxonomy` files contain taxonomy for domain, phylum, class, order, family, genus and species. 
@@ -50,20 +55,24 @@ They will be made available in nf-core/ampliseq for phylogenetic placement.
 
 ## Version history
 
-* v9 (2025-04-28): Update to GTDB R10-RS226
+* v11 (2025-10-31): Stricter filtering of sequences before Sativa, see description above.
 
-* v8 (2025-02-18): Remove extra sequences from e.g. "n1" files that appeared due to ties.
+* v10 (2025-04-30): Update versions in this text.
+
+* v9  (2025-04-28): Update to GTDB R10-RS226
+
+* v8  (2025-02-18): Remove extra sequences from e.g. "n1" files that appeared due to ties.
     Renumber versions here so they correspond to the Figshare versions.
 
-* v7 (2024-06-25): Update to GTDB R09-RS220 from R08-RS214.
+* v7  (2024-06-25): Update to GTDB R09-RS220 from R08-RS214.
 
-* v6 (2024-04-24): Replace manual procedure with Nextflow pipeline. Update to GTDB R08-RS214 from R07-RS207.
+* v6  (2024-04-24): Replace manual procedure with Nextflow pipeline. Update to GTDB R08-RS214 from R07-RS207.
 
-* v5 (2022-10-07): Add missing fasta file with original GTDB names.
+* v5  (2022-10-07): Add missing fasta file with original GTDB names.
 
-* v4 (2022-09-02): Update README (this document)
+* v4  (2022-09-02): Update README (this document)
 
-* v3 (2022-08-31): Update to GTDB R07-RS207 from R06-RS202
+* v3  (2022-08-31): Update to GTDB R07-RS207 from R06-RS202
 
 ## Citations
 
